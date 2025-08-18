@@ -1,0 +1,62 @@
+[
+  {
+    "creationTime": 1693919368000,
+    "lastUpdateTime": 1693919368000,
+    "label": "RS Speed 1",
+    "deviceURL": "io://2049-2203-7143/11123108",
+    "shortcut": false,
+    "controllableName": "io:RollerShutterWithLowSpeedManagementIOComponent",
+    "available": true,
+    "enabled": true,
+    "placeOID": "51e3bce3-9cc4-4493-a010-0133d9dc1e8b",
+    "widget": "PositionableRollerShutterWithLowSpeedManagement",
+    "type": 1,
+    "oid": "f06e248d-17c6-4255-aa7c-0c6513f9296d",
+    "uiClass": "RollerShutter"
+  },
+  {
+    "creationTime": 1723624206000,
+    "lastUpdateTime": 1723624206000,
+    "label": "Vanne IO",
+    "deviceURL": "io://2049-2203-7143/6163675#1",
+    "shortcut": false,
+    "controllableName": "io:HeatingValveIOComponent",
+    "available": true,
+    "enabled": true,
+    "placeOID": "21781001-3cf5-41aa-a4ef-430b48bd0137",
+    "widget": "ValveHeatingTemperatureInterface",
+    "type": 1,
+    "oid": "e4b10813-9e6d-4693-9e0e-c3a4332f8fd8",
+    "uiClass": "HeatingSystem"
+  },
+  {
+    "creationTime": 1745506656000,
+    "lastUpdateTime": 1745506656000,
+    "label": "RS Solar IO",
+    "deviceURL": "io://2049-2203-7143/730342#1",
+    "shortcut": false,
+    "controllableName": "io:DynamicRollerShutterIOComponent",
+    "available": true,
+    "enabled": true,
+    "placeOID": "21781001-3cf5-41aa-a4ef-430b48bd0137",
+    "widget": "DynamicRollerShutter",
+    "type": 1,
+    "oid": "4adc7339-0d2a-42f9-8d77-bdfd373cda95",
+    "uiClass": "RollerShutter"
+  },
+  {
+    "creationTime": 1750927183000,
+    "lastUpdateTime": 1750927183000,
+    "label": "Ysia 1 Channel",
+    "deviceURL": "zigbee://2049-2203-7143/22614/1",
+    "shortcut": false,
+    "controllableName": "zigbee:SomfyRemoteWithErgonomicsComponent",
+    "available": true,
+    "enabled": true,
+    "placeOID": "21781001-3cf5-41aa-a4ef-430b48bd0137",
+    "widget": "EmptyRemoteController",
+    "type": 4,
+    "oid": "03721b1a-1b78-4306-b45f-c0ee5f08ef9e",
+    "uiClass": "RemoteController"
+  }
+]

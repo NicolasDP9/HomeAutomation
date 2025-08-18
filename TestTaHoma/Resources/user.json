@@ -1,0 +1,14 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "address": {
+            "city": "Issy-les-Moulineaux",
+            "postalCode": 92130,
+            "street": "rue Michelet",
+            "streetCode": "2B",
+            "country": "France"
+        },
+        "birthDate": 813766371000
+    }
+]
