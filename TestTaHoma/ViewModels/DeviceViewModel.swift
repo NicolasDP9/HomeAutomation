@@ -23,6 +23,18 @@ class DeviceViewModel {
         modelData.family.keys.sorted()
     }
     
+    var totalDevicesCount: Int {
+        modelData.devices.count
+    }
+    
+    var activeDevicesCount: Int {
+        modelData.devices.filter { $0.available && $0.enabled }.count
+    }
+    
+    var deviceTypesCount: Int {
+        Set(modelData.devices.map { $0.uiClass }).count
+    }
+    
     // MARK: - Initialization
     init(modelData: ModelData) {
         self.modelData = modelData
