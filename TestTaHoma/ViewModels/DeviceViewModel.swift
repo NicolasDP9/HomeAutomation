@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 
 @Observable
-class DeviceViewModel {
+final class DeviceViewModel {
     
     // MARK: - Properties
     private let modelData: ModelData
@@ -46,7 +46,7 @@ class DeviceViewModel {
     }
     
     func getDisplayURL(for device: Device) -> String {
-        return device.deviceURL ?? "N/A"
+        return device.deviceURL ?? L10n.na
     }
     
     func getDevices(for family: String) -> [Device] {
@@ -57,9 +57,9 @@ class DeviceViewModel {
     @ViewBuilder
     func getDetailView(for device: Device) -> some View {
         switch device.uiClass {
-        case "RollerShutter":
+        case L10n.rollerShutter:
             ShutterSteeringCard(device: device)
-        case "HeatingSystem":
+        case L10n.heatingSystem:
             ValveSteeringCard(device: device)
         default:
             UnsupportedDeviceView(device: device)
@@ -73,15 +73,15 @@ struct UnsupportedDeviceView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Image(systemName: "exclamationmark.triangle")
+            Image(systemName: L10n.Exclamationmark.triangle)
                 .font(.system(size: 50))
                 .foregroundColor(.orange)
             
-            Text("Device Type Not Supported")
+            Text(L10n.deviceTypeNotSupported)
                 .font(.title2)
                 .fontWeight(.semibold)
             
-            Text("Device class: \(device.uiClass)")
+            Text(L10n.deviceClass(device.uiClass))
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             
@@ -89,6 +89,6 @@ struct UnsupportedDeviceView: View {
                 .font(.headline)
         }
         .padding()
-        .navigationTitle("Unsupported Device")
+        .navigationTitle(L10n.unsupportedDevice)
     }
 }

@@ -1,0 +1,26 @@
+strings:
+  inputs:
+    - TestTaHoma/Resources/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: TestTaHoma/Generated/L10n.swift
+      params:
+        enumName: L10n
+
+xcassets:
+  inputs:
+    - TestTaHoma/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: TestTaHoma/Generated/AssetsCatalog.swift
+      params:
+        enumName: Asset
+
+colors:
+  inputs:
+    - TestTaHoma/Resources/Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: TestTaHoma/Generated/Colors.swift
+      params:
+        enumName: ColorName

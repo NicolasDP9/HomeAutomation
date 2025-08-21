@@ -1,0 +1,96 @@
+/* Common */
+"N/A" = "N/A";
+
+/* Navigation */
+"devices_tab" = "Devices";
+"my_account_tab" = "My account";
+"my_equipments" = "Mes équipements";
+"my_account" = "Mon compte";
+"unsupported_device" = "Unsupported Device";
+
+/* Device Types */
+"roller_shutter" = "RollerShutter";
+"heating_system" = "HeatingSystem";
+"roller_shutters" = "Volets roulants";
+"heating_systems" = "Système de chauffage";
+
+/* Device Status */
+"loading_equipments" = "Chargement des équipements...";
+"device_type_not_supported" = "Device Type Not Supported";
+"device_class" = "Device class: %@";
+"total" = "Total";
+"active" = "Actifs";
+"types" = "Types";
+"overview" = "Vue d'ensemble";
+
+/* Shutter Controls */
+"current_position" = "Position actuelle";
+"closed" = "Fermé";
+"open" = "Ouvert";
+"partially_open" = "Partiellement ouvert";
+"position_control" = "Contrôle de position";
+"quick_positions" = "Positions rapides";
+"vertical_control" = "Contrôle vertical";
+"slide_vertically_to_adjust" = "Glissez verticalement pour ajuster";
+"opening_percentage" = "%d%% d'ouverture";
+
+/* Heating Controls */
+"current_temperature" = "Température actuelle";
+"power" = "Alimentation";
+"temperature_control" = "Contrôle de température";
+"equipment_information" = "Informations de l'équipement";
+"equipment_state" = "État de l'équipement";
+"heating_system_active" = "Système de chauffage actif";
+"system_stopped" = "Système arrêté";
+"target_temperature" = "Température cible";
+"adjust_desired_temperature" = "Ajustez la température souhaitée";
+"quick_temperatures" = "Températures rapides";
+"enabled" = "Activé";
+"disabled" = "Désactivé";
+"available" = "Disponible";
+"unavailable" = "Indisponible";
+"inactive" = "Désactivé";
+
+/* Device Information */
+"equipment_name" = "Nom de l'équipement";
+"controller_type" = "Type de contrôleur";
+"availability" = "Disponibilité";
+"network_address" = "Adresse réseau";
+"device_info" = "Device Info";
+"label" = "Label";
+"type" = "Type";
+"status" = "Status";
+"device_url" = "Device Url";
+
+/* User Account */
+"personal_information" = "Informations personnelles";
+"first_name" = "Prénom";
+"last_name" = "Nom";
+"email" = "Email";
+"address" = "Adresse";
+"main_address" = "Adresse principale";
+"member_since" = "Membre depuis %@";
+
+/* File names */
+"devices_json" = "devices.json";
+"user_json" = "user.json";
+
+/* Error messages */
+"couldnt_find_file" = "Couldn't find %@ in main bundle.";
+"couldnt_load_file" = "Couldn't load %@ from main bundle:\n%@";
+"couldnt_parse_file" = "Couldn't parse %@ as %@:\n%@";
+
+/* System Icons - keeping as is since they are system identifiers */
+"house.fill" = "house.fill";
+"person.crop.circle.fill" = "person.crop.circle.fill";
+"window.shade.closed" = "window.shade.closed";
+"thermometer.medium" = "thermometer.medium";
+"gear" = "gear";
+"power" = "power";
+"square.grid.2x2.fill" = "square.grid.2x2.fill";
+"exclamationmark.triangle" = "exclamationmark.triangle";
+
+/* Temperature and Values */
+"temperature_celsius" = "%.1f°C";
+"percentage" = "%d%%";
+"degree_symbol" = "%d°";

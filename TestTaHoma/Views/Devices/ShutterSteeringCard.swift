@@ -192,7 +192,7 @@ struct QuickPositionButtons: View {
     @Binding var opener: Double
     
     let quickPositions: [(name: String, value: Double, icon: String)] = [
-        ("Fermé", 0, "rectangle.fill"),
+        (L10n.closed, 0, "rectangle.fill"),
         ("1/4", 25, "rectangle.topthird.inset.filled"),
         ("1/2", 50, "rectangle.center.inset.filled"),
         ("3/4", 75, "rectangle.bottomthird.inset.filled"),

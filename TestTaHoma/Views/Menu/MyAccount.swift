@@ -22,7 +22,7 @@ struct MyAccount: View {
             .padding()
         }
         .background(Color(.systemGroupedBackground))
-        .navigationTitle("Mon compte")
+        .navigationTitle(L10n.myAccount)
         .navigationBarTitleDisplayMode(.large)
     }
 }

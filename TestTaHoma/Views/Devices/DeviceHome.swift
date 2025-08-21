@@ -34,7 +34,7 @@ struct DeviceHomeContent: View {
                     ProgressView()
                         .scaleEffect(1.2)
                     
-                    Text("Chargement des équipements...")
+                    Text(L10n.loadingEquipments)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
@@ -42,7 +42,7 @@ struct DeviceHomeContent: View {
                 .background(Color(.systemGroupedBackground))
             }
         }
-        .navigationTitle("Mes équipements")
+        .navigationTitle(L10n.myEquipments)
         .navigationBarTitleDisplayMode(.large)
         .onAppear {
             if viewModel == nil {
@@ -59,7 +59,7 @@ struct DevicesStatsView: View {
     var body: some View {
         VStack(spacing: 16) {
             HStack {
-                Text("Vue d'ensemble")
+                Text(L10n.overview)
                     .font(.headline)
                     .fontWeight(.semibold)
                 Spacer()
@@ -68,23 +68,23 @@ struct DevicesStatsView: View {
             
             HStack(spacing: 16) {
                 StatCardView(
-                    title: "Total",
+                    title: L10n.total,
                     value: "\(viewModel.totalDevicesCount)",
-                    icon: "house.fill",
+                    icon: L10n.House.fill,
                     color: .blue
                 )
                 
                 StatCardView(
-                    title: "Actifs",
+                    title: L10n.active,
                     value: "\(viewModel.activeDevicesCount)",
-                    icon: "power",
+                    icon: L10n.power,
                     color: .green
                 )
                 
                 StatCardView(
-                    title: "Types",
+                    title: L10n.types,
                     value: "\(viewModel.deviceTypesCount)",
-                    icon: "square.grid.2x2.fill",
+                    icon: L10n.Square.Grid._2x2.fill,
                     color: .purple
                 )
             }
@@ -155,24 +155,24 @@ struct DeviceFamilySection: View {
     
     private func displayNameForFamily(_ family: String) -> String {
         switch family {
-        case "RollerShutter": return "Volets roulants"
-        case "HeatingSystem": return "Système de chauffage"
+        case L10n.rollerShutter: return L10n.rollerShutters
+        case L10n.heatingSystem: return L10n.heatingSystems
         default: return family
         }
     }
     
     private func iconForFamily(_ family: String) -> String {
         switch family {
-        case "RollerShutter": return "window.shade.closed"
-        case "HeatingSystem": return "thermometer.medium"
-        default: return "gear"
+        case L10n.rollerShutter: return L10n.Window.Shade.closed
+        case L10n.heatingSystem: return L10n.Thermometer.medium
+        default: return L10n.gear
         }
     }
     
     private func colorForFamily(_ family: String) -> Color {
         switch family {
-        case "RollerShutter": return .blue
-        case "HeatingSystem": return .orange
+        case L10n.rollerShutter: return .blue
+        case L10n.heatingSystem: return .orange
         default: return .gray
         }
     }

@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 
 @Observable
-class UserViewModel {
+final class UserViewModel {
     
     // MARK: - Properties
     private let modelData: ModelData

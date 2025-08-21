@@ -21,7 +21,7 @@ struct ContentView: View {
                 DeviceHomeContent()
             }
             .tabItem {
-                Label("Devices", systemImage: "house")
+                Label(L10n.devicesTab, systemImage: L10n.House.fill)
             }
             .tag(Tab.devices)
             
@@ -29,7 +29,7 @@ struct ContentView: View {
                 MenuContent()
             }
             .tabItem {
-                Label("My account", systemImage: "person.crop.circle.fill")
+                Label(L10n.myAccountTab, systemImage: L10n.Person.Crop.Circle.fill)
             }
             .tag(Tab.menu)
         }
